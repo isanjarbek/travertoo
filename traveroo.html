@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Traveroo</title>
+    <link rel="stylesheet" href="./traveroo.css">
+</header>
+
+<body>
+    <div class="container">
+        <div class="fixed">
+            <div class="logo">
+                <div class="logos">
+                    <img src="data:image/png;base64,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"
+                        width="50px" height="50px" alt="">
+                    <div class="matn">traveroo.</div>
+                </div>
+
+                <div class="sign">
+                    <a class="but1" href="#">Sign In</a>
+                    <a class="but2" href="#">Sign Creating</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pageleft">
+            <div class="txt">
+                <div class="righttxt">
+                    <h1>To all tour guides,</h1>
+                    <h1> Reach more travellers by creating self-guided audio tours</h1>
+                    <span class="note">Travelers, using Traveroo mobile app, can then buy and experience your
+                        tour</span>
+                </div>
+
+                <div class="trap">
+                    <div class="calc">
+                        <h3>Find out how much you could earn
+                            <span class="little">(potential travelers/month)</span>
+                        </h3>
+                        <input class="input" type="text" value="300">
+                        <div class="money">
+                            <div class="dolar">
+                                <span class="sum">$1197 </span>
+                                <span class="per">per month</span>
+                                <img src="data:image/png;base64,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"
+                                    width="20px" height="20px" alt="">
+
+                            </div>
+                            <button class="creat">Start creating</button>
+                            <div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="background">
+                <img src="https://traveroo.net/static/media/main-banner.221d0d91.svg" width="620px" height="700px"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <fdiv class="list2">
+        <div class="paragrf">
+            <span class="line"></span>
+            <h2>Create tour in 3 simple steps</h2>
+        </div>
+
+        <div class="notes">
+            <div class="one">
+                <div class="imgone">
+                    <span>1</span>
+                </div>
+                <img src="https://traveroo.net/static/media/how-it-works-location.934120cd.png" width="200px"
+                    height="155px" alt="">
+                <h2>Set Location</h2>
+                <p>Enter the address where you want to start or double-click on an area of the map.</p>
+            </div>
+
+            <div class="one">
+                <div class="imgone">
+                    <span>2</span>
+                </div>
+                <img src="https://traveroo.net/static/media/how-it-works-record.1077e218.png" width="200px"
+                    height="155px" alt="">
+                <h2>Tell a story behind that place</h2>
+                <p>Record audio your story or upload a file.</p>
+            </div>
+
+            <div class="one">
+                <div class="imgone">
+                    <span>3</span>
+                </div>
+                <img src="https://traveroo.net/static/media/how-it-works-publish.370f50dc.png" width="200px"
+                    height="155px" alt="">
+                <h2>Start earning!</h2>
+                <p>Set the price, publish and start earning</p>
+            </div>
+
+        </div>
+
+        <div class="youtube">
+            <iframe width="560px" height="315px" src="https://www.youtube.com/embed/QOTgBhvlu7o"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </fdiv>
+
+    <div class="picabout">
+        <div class="list3">
+            <div class="syntax">
+                <div class="marks">
+                    <span class="mark">"</span>
+                </div>
+                <div class="text">
+                    <span class="thin">I’ve never thought about travelers who can’t afford my tours. Traveroo allowed
+                        me to tackle<span class="bold"> low-budget travelers</span> and earn even more.</span>
+                </div>
+                <div class="not">
+                    <p><span class="bolds"> Marija Kelvina,</span> "Tour-guide from Barcelona"</p>
+                </div>
+            </div>
+
+            <div class="pics">
+                <img src="https://traveroo.net/static/media/author-review.3c927eea.png" width="400px" height="450px"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="list4">
+        <div class="asked">
+            <span class="line"></span>
+            <h2>Frequently asked questions</h2>
+        </div>
+        <div class="questions">
+            <div class="leftques">
+                <div class="quest1">
+                    <div class="survey">
+                        <p>> Do I need to be a professional tour-guide to create tours?</p>
+                    </div>
+                </div>
+                <div class="quest1">
+                    <div class="survey">
+                        <p>> Do I retain intellectual property?</p>
+                    </div>
+                </div>
+                <div class="quest1">
+                    <div class="survey">
+                        <p>> How can I sell my tours?</p>
+                    </div>
+                </div>
+                <div class="quest1">
+                    <div class="survey">
+                        <p>> How can I get my earnings?</p>
+                    </div>
+                </div>
+                <div class="quest1">
+                    <div class="survey">
+                        <p>> How much do I get in each sale?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightques">
+                <div class="quest1">
+                    <div class="survey">
+                        <p>> What gets listed first when there are multiple tours?</p>
+                    </div>
+                </div>
+                <div class="quest1">
+                    <div class="survey">
+                        <p>> What happens if someone tries to steal my content or tour?</p>
+                    </div>
+                </div>
+                <div class="quest1">
+                    <div class="survey">
+                        <p>> Is this a remote work?</p>
+                    </div>
+                </div>
+                <div class="quest1">
+                    <div class="survey">
+                        <p>> Do I need a license?</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="butcreat">
+            <a href="#">
+                <button class="stcreat">Start creating</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="traps">
+        <div class="trapframe">
+            <div class="logoandplay">
+                <a href="#">
+                    <img src="data:image/png;base64,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"
+                        width="50px" height="50px" alt="">
+                </a>
+            </div>
+
+            <div class="trap1">
+                <div class="playmarket">
+                    <a href="#">
+                        <img src="https://traveroo.net/static/media/google-play.893bde0c.svg" alt="">
+                    </a>
+                </div>
+
+
+                <div class="centertxt">
+                    <div class="information">
+                        <ul>
+                            <li><a href="#">About us</a> </li>
+                            <li><a href="#">Support</a> </li>
+                            <li><a href="#">How to create a tour?</a> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="instagramandfacebook">
+                    <div class="instagram">
+                        <a href="#">
+                            <img src="https://traveroo.net/static/media/insta.8a24222c.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="facebook">
+                        <a href="#">
+                            <img src="https://traveroo.net/static/media/facebook.b43c785f.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="company">
+            <p class="footer">© 2020 Traveroo Inc. All rights reserved.</p>
+        </div>
+    </div>
+
+    <div class="map">
+        <iframe src="https://www.google.coim/maps/embed?pb=!1m18!1m12!1m3!1d11985.909178723152!2d69.23599728879395!3d41.32023349303832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba215c252f5%3A0xeafa366911899d4b!2zS29yemlua2EudXogLSDQmtCw0YDQsNGC0LDRiA!5e0!3m2!1sru!2s!4v1616562237996!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+</body>
+
+</html>
